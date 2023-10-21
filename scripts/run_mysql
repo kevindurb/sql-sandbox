@@ -1,0 +1,4 @@
+#! /bin/bash
+
+echo "Running sql..."
+mysql -h 127.0.0.1 -u root -ppassword < sandbox.sql > result.out 2>&1
