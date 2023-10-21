@@ -2,8 +2,14 @@
 version: '3.8'
 services:
   mysql:
-    image: mysql
+    image: docker.io/library/mysql
     ports:
       - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: password
+  postgres:
+    image: docker.io/library/postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: password

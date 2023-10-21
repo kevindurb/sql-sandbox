@@ -1,0 +1,4 @@
+#! /bin/bash
+
+echo "Running sql..."
+psql -h localhost -U postgres -f ./sandbox.sql > result.out 2>&1
